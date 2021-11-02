@@ -33,18 +33,18 @@ e) Run test.py -n [sample name] to obtain predicted volumes and evaluation outco
 
 The small version of DeepDTI network:
 
-![model](Example/model.png)
+![model](Examples/model.png)
 
 
 Training process:
-![loss](Example/loss.jpg)
+![loss](Examples/loss.jpg)
 
 Denoise data: the predicted data is in 'test/sample_name/prediction/'
 
 
 Visual outcome obtained by [itksnap](http://www.itksnap.org/pmwiki/pmwiki.php).
 
-![outcome](Example/outcome.png )
+![outcome](Examples/outcome.png )
 
 
 [DeepDTI Citation](https://www.sciencedirect.com/science/article/pii/S1053811920305036?via%3Dihub)
