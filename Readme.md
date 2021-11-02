@@ -44,7 +44,7 @@ c) Prepare your environment, see requirement.txt.
 
 d) Get your own database in train directory and validate directory, then run train.py. See more info by the command: pyhton train.py -h
 
-e) run test.py -n [sample name] to obtain predicted volumes and evaluation outcomes using the well-trained model.
+e) Run test.py -n [sample name] to obtain predicted volumes and evaluation outcomes using the well-trained model.
 
 3. Presentation
 
