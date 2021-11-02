@@ -50,10 +50,10 @@ Mind your database should contain b=0 volumes/ T1 weighted volume and T2 weighte
 
 ![outcome](Examples/outcome.png )
 
-
-[DeepDTI Citation](https://www.sciencedirect.com/science/article/pii/S1053811920305036?via%3Dihub)
   
 
 Please feel free to contact us if you have any problem.
 
 [Contact us](jinnanhu@zhejianglab.com)
+  
+Q. Tian, B. Bilgic, Q. Fan, et al. "DeepDTI: high-fidelity six-direction diffusion tensor imaging using deep learning Neuroimage", 219 (2020), Article 117017
