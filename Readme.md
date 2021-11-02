@@ -1,37 +1,20 @@
-A Tool for DWIs Denoising
+DeepDTI reimplimentation (simplified)
 
-1. Introduction
+1. Functions:
 
-Author: Jinnan Hu
-
-Instructor: Dr. junyan Wang
-
-From Computer Neural Imaging Research Group, Zhejiang Lab
-
-2. Acknowledgement
-
-Our model is a small version of [DeepDTI](https://doi.org/10.1016/j.neuroimage.2020.117017), trained by NVIDIA 3090 24G.
-
-The main difference between our implementation and DeepDTI is that we trained the network using complete volumes instead of blocks. 
-Thus, our network is smaller due to the limited GPU memory.
-
-See detailed elaborations from the paper 'DeepDTI: High-fidelity six-direction diffusion tensor imaging using deep learning'
-
-Functions:
-
-a) Provide a well-trained model to denoise the dMRIs.
+a) Provide a trained model to denoise the dMRIs.
 
 b) A test script to evaluate the performance.
 
 c) A train script to build your model.
 
-Environment:
+2. Environment:
 
 python 3.6 + pytorch 1.8.1 + cuda11.1
 
 See detailed info in requirements.txt, use command <pip install -r requirements.txt> to install the packages.
 
-2. Usage
+3. Usage
 
 a) Download the well-trained model from our drive.
 
@@ -40,30 +23,33 @@ Mind your database should contain b=0 volumes/ T1 weighted volume and T2 weighte
 
 Google drive: https://drive.google.com/drive/folders/1yxek_TaBvl-g3Dsuj6DUewEWEqkKJfju?usp=sharing
 
-c) Prepare your environment, see requirement.txt.
+c) pip install -r requirements.txt
 
 d) Get your own database in train directory and validate directory, then run train.py. See more info by the command: pyhton train.py -h
 
 e) Run test.py -n [sample name] to obtain predicted volumes and evaluation outcomes using the well-trained model.
 
-3. Presentation
+4. Example
 
 The small version of DeepDTI network:
 
-![model](presentation/model.png)
+![model](Example/model.png)
 
 
 Training process:
-![loss](presentation/loss.jpg)
+![loss](Example/loss.jpg)
 
 Denoise data: the predicted data is in 'test/sample_name/prediction/'
 
 
 Visual outcome obtained by [itksnap](http://www.itksnap.org/pmwiki/pmwiki.php).
 
-![outcome](presentation/outcome.png )
+![outcome](Example/outcome.png )
+
+
+[DeepDTI Citation](https://www.sciencedirect.com/science/article/pii/S1053811920305036?via%3Dihub)
+  
 
 Please feel free to contact us if you have any problem.
 
 [Contact us](jinnanhu@zhejianglab.com)
-
